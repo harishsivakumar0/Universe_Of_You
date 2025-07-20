@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Universe of You</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      background-size: cover;
+      overflow-x: hidden;
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      padding: 80px 30px;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    audio {
+      display: none;
+    }
+
+    /* Floating animation */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0); }
+    }
+
+    .ramya-name {
+      display: inline-block;
+      animation: float 3s ease-in-out infinite;
+      color: #ffcc70;
+      font-weight: bold;
+      text-shadow: 0 0 8px #ffcc70;
+    }
+
+    /* Soft Nebula Glow Background */
+    .nebula {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.05) 0%, transparent 70%),
+                        radial-gradient(circle at 80% 60%, rgba(255, 255, 255, 0.04) 0%, transparent 70%),
+                        radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
+      z-index: 0;
+      pointer-events: none;
+      animation: slow-fade 30s ease-in-out infinite alternate;
+    }
+
+    @keyframes slow-fade {
+      0% { opacity: 0.4; }
+      100% { opacity: 0.7; }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="nebula"></div>
+
+<!-- Top Animation -->
+<div style="text-align:center; padding-top: 30px;">
+  <lottie-player src="https://lottie.host/3df30370-62fa-4ff9-9a2e-c40ef3de95bc/cJYtuSw4iC.json"
+    background="transparent" speed="1" style="width: 180px; height: 180px;" loop autoplay>
+  </lottie-player>
+</div>
+
+<!-- Introduction -->
+<section style="background: black;">
+  <h1 style="font-size: 2em;">Welcome to...</h1>
+  <h2 style="font-size: 2.5em; color: gold;">The Universe of You 💛</h2>
+  <p style="margin-top: 30px;">Tap to begin the journey →</p>
+</section>
+
+<section style="background: #0d0d0d;">
+  <h1>Hey Chocolate 💛</h1>
+  <p>Ready to travel through your own galaxy — the one you lit up just by being <em>you</em>.</p>
+</section>
+
+<!-- Background Music -->
+<audio id="bgm" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg" />
+</audio>
+
+<script>
+  const bgm = document.getElementById("bgm");
+  window.addEventListener("load", () => {
+    bgm.play().catch(() => {});
+  });
+  window.addEventListener("click", () => {
+    if (bgm.paused) {
+      bgm.play();
+    }
+  });
+</script>
+
+<!-- Planet Ziya -->
+<section>
+  <h1>Planet ZIYA – My Ray of Light</h1>
+  <p>
+    I still remember July 19.<br>
+    I was upset. Nothing felt right.<br><br>
+    But you didn’t step back.  
+    You felt it — and gave your heart just to make me smile again.  
+    <br><br>
+    And you did.  
+    You turned one of my lowest days into something beautiful.  
+    <br><br>
+    I always knew… if I had a daughter, I’d name her Ziya.  
+    But before she ever arrives,<br>
+    <strong>you</strong> gave that name its meaning.  
+    <br><br>
+    You are — and will always be —  
+    <strong>my first Ziya.</strong>
+  </p>
+</section>
+
+<!-- Planet Presence -->
+<section>
+  <h1>Planet PRESENCE – Your Magic</h1>
+  <p>
+    Every time I see your name on a call,  
+    something in me lights up.<br><br>
+    Even if I’m blank, I still want to see you.  
+    Your presence brings peace I can’t explain.  
+    <br><br>
+    You calm the noise — not by doing anything...  
+    just by being there.  
+    <br><br>
+    Maybe that’s magic.  
+    Or maybe it’s destiny — putting your soul beside mine  
+    so I could breathe again.
+  </p>
+</section>
+
+<!-- Pearl -->
+<section>
+  <h1>Planet PEARL – My Precious One</h1>
+  <p>
+    I don’t like many sweets…<br>
+    But I love rasamalai.<br><br>
+    And you…<br>
+    You are my rasamalai.  
+    <br><br>
+    You are soft where the world is harsh,  
+    calm where everything else is loud.  
+    You make me feel at peace — just by being you.  
+    <br><br>
+    <strong>My pearl. My precious one.</strong>
+  </p>
+</section>
+
+<!-- Promise -->
+<section>
+  <h1>Planet PROMISE – Always Yours in My Way</h1>
+  <p>
+    Maybe years will pass.<br>
+    Maybe we’ll drift into new chapters…  
+    <br><br>
+    But I’ll still be there — with the same love.  
+    Quiet. Constant. Yours.  
+    <br><br>
+    And if you ever feel lost…  
+    I hope you remember this —  
+    you’ll always have a place to return to.  
+    <br><br>
+    <strong>That’s a promise.</strong>
+  </p>
+</section>
+
+<!-- Final -->
+<section style="background: #111;">
+  <h1>When My 7 Minutes Begin…</h1>
+  <p>
+    They say your life flashes before your eyes in your last 7 minutes.  
+    <br><br>
+    I’ll see many moments…  
+    But when *you* appear, I’ll smile.  
+    I’ll say:  
+    <br><br>
+    “Yes. This is where my soul found peace.”  
+    <br><br>
+    You’re not just part of my story.  
+    You are the part that made life worth watching.  
+    <br><br>
+    You are my 7-minute highlight.
+  </p>
+  <div style="margin-top: 30px;">
+    <lottie-player src="https://lottie.host/e793e4d6-c6d1-46f1-a9f3-f5d76d64beec/pSUIuMdEvL.json"
+      background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay>
+    </lottie-player>
+  </div>
+</section>
+
+<!-- Ending -->
+<section style="background: #0c0c0c;">
+  <h1>And This Galaxy…</h1>
+  <p>
+    ...will always carry your light.  
+    <br><br>
+    <span class="ramya-name">💛 Ramya 💛</span><br><br>
+    Come back here anytime. I’ll still be here.
+  </p>
+</section>
+
+<section style="background: #121212; padding: 60px 20px;">
+  <h1>Send a Feeling to the Sky 💭</h1>
+  <p style="margin-bottom: 30px;">What are you feeling right now?</p>
+  
+  <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+    <button onclick="reactToFeeling('💛 I Miss You')" class="feel-btn">💛 I Miss You</button>
+    <button onclick="reactToFeeling('😊 I’m Smiling')" class="feel-btn">😊 I’m Smiling</button>
+    <button onclick="reactToFeeling('🌙 I Feel Calm')" class="feel-btn">🌙 I Feel Calm</button>
+    <button onclick="reactToFeeling('🪐 Thinking of You')" class="feel-btn">🪐 Thinking of You</button>
+  </div>
+
+  <p id="galaxyResponse" style="margin-top: 40px; font-style: italic; color: #ffd700;"></p>
+</section>
+
+<style>
+  .feel-btn {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 10px 18px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .feel-btn:hover {
+    background: #333;
+    color: #ffcc70;
+  }
+</style>
+
+<script>
+  function reactToFeeling(feeling) {
+    const responseEl = document.getElementById("galaxyResponse");
+    let response = "";
+
+    switch (feeling) {
+      case "💛 I Miss You":
+        response = "The sky says: I miss you too 💛";
+        break;
+      case "😊 I’m Smiling":
+        response = "Your smile just lit up this space 😊";
+        break;
+      case "🌙 I Feel Calm":
+        response = "Breathe in… the sky feels calm with you 🌙";
+        break;
+      case "🪐 Thinking of You":
+        response = "Someone is thinking of you too 🪐";
+        break;
+    }
+
+    responseEl.innerText = response;
+  }
+</script>
+
+</body>
+</html>
